@@ -1,8 +1,8 @@
-package leetcode.array;
+package com.milton.leetcode.array;
 
 /**
-   problem statement:
- 
+problem statement:
+
 	 Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. The order of the elements may be changed. Then return the number of elements in nums which are not equal to val.
 	
 	Consider the number of elements in nums which are not equal to val be k, to get accepted, you need to do the following things:
@@ -46,7 +46,7 @@ package leetcode.array;
 	Note that the five elements can be returned in any order.
 	It does not matter what you leave beyond the returned k (hence they are underscores).
 
- */
+*/
 
 public class RemoveElement_LeetCode_27 {
 
@@ -56,7 +56,6 @@ public class RemoveElement_LeetCode_27 {
 		int[] ar = { 0, 1, 2, 2, 3, 0, 4, 2 };
 		int value = 2;
 		removeElement(ar, value);
-//		[0, 1, 3, 0, 4, 0, 4, 2]
 	}
 
 	public static int removeElement(int[] nums, int val) {
@@ -76,6 +75,4 @@ public class RemoveElement_LeetCode_27 {
 		}
 		return i;
 	}
-
-
 }

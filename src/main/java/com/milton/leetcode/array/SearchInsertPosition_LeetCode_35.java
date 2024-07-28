@@ -1,4 +1,4 @@
-package leetcode.array;
+package com.milton.leetcode.array;
 
 /**
  * problem statement:
@@ -27,8 +27,9 @@ package leetcode.array;
 
   
  */
-public class SearchInsertPosition_LeetCode_35 {
 
+public class SearchInsertPosition_LeetCode_35 {
+	
 	public static void main(String[] args) {
 //		int []ar = {1,3,5,6};
 //		int target = 5;
@@ -38,8 +39,9 @@ public class SearchInsertPosition_LeetCode_35 {
 //		int target = 7;
 //		int []ar = {1,3,5,6};
 //		int target = 0;
-		int []ar = {1,3};
+		int[] ar = { 1, 3 };
 		int target = 2;
+		searchInsert(ar, target);
 	}
 
 	public static int searchInsert(int[] nums, int target) {
@@ -47,11 +49,11 @@ public class SearchInsertPosition_LeetCode_35 {
 		if (nums.length <= 0) {
 			return index;
 		}
-		
+
 		int low = 0;
-		int high = nums.length-1;
+		int high = nums.length - 1;
 		int mid = 0;
-		
+
 		while (low <= high) {
 			mid = (low + high) / 2;
 			if (nums[mid] == target) {
@@ -63,10 +65,8 @@ public class SearchInsertPosition_LeetCode_35 {
 				high = mid - 1;
 			}
 		}
-		
+
 		return low;
-		
+
 	}
-	
-	
 }
